@@ -1,0 +1,30 @@
+GET http://localhost:3000/tasks
+
+###
+
+GET http://localhost:3000/tasks?sort=oldest&count=3
+
+###
+GET http://localhost:3000/tasks/
+
+###
+GET http://localhost:3000/tasks/2312
+
+###
+POST http://localhost:3000/tasks
+Content-Type: application/json
+
+{
+  "title": "테스트스트",
+  "description": "술마시고싶다아아"
+}
+###
+PATCH http://localhost:3000/tasks/6911a365911809a44c53c63a
+Content-Type: application/json
+
+{
+  "title": "ㄴ"
+}
+
+###
+DELETE http://localhost:3000/tasks/6911a365911809a44c53c63a
